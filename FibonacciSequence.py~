@@ -1,0 +1,19 @@
+def series(a , b):
+    temp = b
+    b = a + b
+    a = temp
+    return (a , b)
+
+range = input("Enter the range \n")
+f1 , f2 , f3 = (0 , 1 , 1)
+
+print(f1)
+print(f2)
+print(f3)
+
+while True:
+    f2 , f3 = series(f2 , f3)
+    if(f3 < range):
+        print(f3)
+    else:
+        break
